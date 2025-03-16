@@ -1,0 +1,160 @@
+/* Home.css */
+.home {
+  height: 100vh;
+    background: linear-gradient(180deg, white 0%, rgb(157, 162, 172) 90%);
+    padding: 20px;
+  }
+  
+  /* Main container */
+  .main {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Left side intro */
+  .intro {
+    padding: 50px;
+    text-align: center;
+    width: 450px;
+    height: auto;
+    border-radius: 10px;
+    background: linear-gradient(180deg, white 0%, rgb(157, 162, 172) 90%);
+  }
+  
+  /* Title */
+  .intro h1 {
+    color: rgb(16, 94, 16);
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  
+  /* Logo */
+  .intro img {
+    width: 100px;
+    height: 80px;
+  }
+  
+  /* Buttons container */
+  .about-btn {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Buttons */
+  .about-btn button {
+    width: 140px;
+    height: 45px;
+    border-radius: 10px;
+    background: rgb(109, 109, 163);
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .about-btn button:hover {
+    background: rgb(85, 85, 128);
+  }
+  
+  /* Right side Image */
+  .intro-img {
+    width: 600px;
+    height: 400px;
+    border-radius: 10px;
+    background-image: url(/src/asset/introbg1.png);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* ✅ Responsive Design */
+  @media (max-width: 1024px) {
+    .main {
+      flex-direction: column;
+      gap: 30px;
+      margin: 20px;
+      align-items: center;
+    }
+  
+    .intro {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .intro h1 {
+      font-size: 24px;
+    }
+  
+    .intro img {
+      width: 80px;
+      height: 60px;
+    }
+  
+    .about-btn {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .about-btn button {
+      width: 160px;
+      height: 50px;
+    }
+  
+    .intro-img {
+      width: 100%;
+      max-width: 600px;
+      height: 350px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .intro {
+      width: 100%;
+      padding: 20px;
+    }
+  
+    .intro h1 {
+      font-size: 22px;
+    }
+  
+    .about-btn button {
+      width: 140px;
+      height: 45px;
+    }
+  
+    .intro-img {
+      width: 100%;
+      max-width: 500px;
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .intro h1 {
+      font-size: 20px;
+    }
+  
+    .about-btn button {
+      width: 120px;
+      height: 40px;
+      font-size: 14px;
+    }
+  
+    .intro-img {
+      max-width: 400px;
+      height: 250px;
+    }
+  }
+  
+
+
+

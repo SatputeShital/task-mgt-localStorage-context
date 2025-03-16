@@ -1,0 +1,104 @@
+/* Container Styling */
+.add-task-container {
+  font-size: 15px ;
+  width: 100%;
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  border: 3px solid black;
+  background: linear-gradient(180deg, white 0%, rgb(157, 162, 172) 50%);
+}
+
+/* Form Title */
+.add-task-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Form Box */
+.addTask-form {
+  width: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+/* Label Styling */
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+
+/* Input Fields */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Add Shadow Effect */
+input:focus, select:focus, textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Textarea Resizing */
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* 📌 Responsive Design */
+@media (max-width: 768px) {
+  .add-task-container {
+      width: 90%;
+  }
+  
+  .addTask-form {
+      padding: 15px;
+  }
+  
+  input, select, textarea {
+      font-size: 14px;
+  }
+
+  button {
+      font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-task-container {
+      width: 95%;
+  }
+  
+  button {
+      padding: 10px;
+      font-size: 14px;
+  }
+}

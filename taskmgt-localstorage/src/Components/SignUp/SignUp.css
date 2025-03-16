@@ -1,0 +1,132 @@
+*{
+    font-size: 17px;
+}
+
+/* Ensure full viewport height */
+/* .signUp {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, white 0%, rgb(157, 162, 172) 50%);
+} */
+
+/* Centering the sign-up container */
+.signUp {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(180deg, white 0%, rgb(157, 162, 172) 50%);
+}
+.signUp h1{
+    margin-right: 40px;
+}
+
+/* Sign-up form */
+.signUp-form {
+    background: linear-gradient(180deg, white 0%, rgb(157, 162, 172) 50%);
+    width: 550px;
+    /* padding: 40px; */
+    border: 2px solid grey;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Form title */
+.signUp-form h2 {
+    color: rgb(6, 57, 28);
+    /* margin-bottom: 20px; */
+}
+
+/* Input field container */
+.inputbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Input fields */
+.inputbox input {
+    /* width: 100%; */
+   width: 300px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    /* margin-bottom: 15px; */
+}
+
+/* Input labels */
+.inputbox label {
+    color: rgb(6, 14, 20);
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Sign-up button */
+.inputbox button {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    background-color: rgb(109, 109, 163);
+    color: white;
+    font-weight: bold;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover effect */
+.inputbox button:hover {
+    background-color: rgb(80, 80, 140);
+}
+
+/* Already have an account link */
+.alreadyacc-link {
+    margin-top: 15px;
+    font-size: 14px;
+    
+}
+
+.alreadyacc-link a {
+    color: blue;
+    text-decoration: none;
+}
+
+.alreadyacc-link a:hover {
+    text-decoration: underline;
+}
+
+/* RESPONSIVENESS */
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .signUp-form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .inputbox input,
+    .inputbox button {
+        max-width: 100%;
+    }
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .signUp-form {
+        width: 80%;
+    }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    .signUp-form {
+        width: 450px;
+    }
+}
